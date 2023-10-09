@@ -1,2 +1,2 @@
-# ecomercerSpringReact
-Sistema de ventas con SpringBoot y ReactJS
+# ecomercerNodeReact
+Sistema de ventas con NodeJS y ReactJS
