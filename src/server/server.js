@@ -2,8 +2,6 @@ const express = require('express');
 const cors = require('cors');
 const db = require('../db/connection');
 
-
-
 class Server {
     constructor() {
         this.app = express();
@@ -27,7 +25,6 @@ class Server {
           }
     }
 
-
     middlewares() {
         //CORS
         this.app.use(cors());
@@ -38,16 +35,16 @@ class Server {
     }
 
     routes() {
-        this.app.use('/api/roles', require('../routes/roles.routes'));
-        this.app.use('/api/usuarios', require('../routes/usuarios.routes'));
-        this.app.use('/api/clientes', require('../routes/clientes.routes'));
-        this.app.use('/api/ventas', require('../routes/ventas.routes'));
-        this.app.use('/api/ventas-productos-detalles', require('../routes/ventaProductoDetalles.routes'));
-        this.app.use('/api/productos', require('../routes/productos.routes'));
-        this.app.use('/api/producto-proveedores', require('../routes/productoProveedores.routes'));
-        this.app.use('/api/proveedores', require('../routes/proveedores.routes'));
-        this.app.use('/api/categorias', require('../routes/categorias.routes'));
-        this.app.use('/api/login', require('../routes/auth.routes'));
+        //this.app.use('/api/roles', require('../routes/roles.routes'));
+        //this.app.use('/api/usuarios', require('../routes/usuarios.routes'));
+        //this.app.use('/api/clientes', require('../routes/clientes.routes'));
+        //this.app.use('/api/ventas', require('../routes/ventas.routes'));
+        //this.app.use('/api/ventas-productos-detalles', require('../routes/ventaProductoDetalles.routes'));
+        //this.app.use('/api/productos', require('../routes/productos.routes'));
+        //this.app.use('/api/producto-proveedores', require('../routes/productoProveedores.routes'));
+        //this.app.use('/api/proveedores', require('../routes/proveedores.routes'));
+        //this.app.use('/api/categorias', require('../routes/categorias.routes'));
+        //this.app.use('/api/login', require('../routes/auth.routes'));
     }
 
     listen() {
