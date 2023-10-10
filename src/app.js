@@ -1,9 +1,7 @@
-const express = require('express');
-const app = express();
-const port = 3000;
+require('dotenv').config();
 
-app.get('/',(req,res)=>{
-    res.send('<h1>Hello World</h1>')
-});
+const Server = require('./server/server');
 
-app.listen(port);
+const server = new Server();
+
+server.listen();
