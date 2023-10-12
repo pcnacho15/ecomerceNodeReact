@@ -13,7 +13,7 @@ class Server {
         // Uso de los middlewares
         this.middlewares();
         // Uso de rutas
-        //this.routes();
+        this.routes();
     }
 
     async dbConnection() {
@@ -43,7 +43,7 @@ class Server {
         //this.app.use('/api/productos', require('../routes/productos.routes'));
         //this.app.use('/api/producto-proveedores', require('../routes/productoProveedores.routes'));
         //this.app.use('/api/proveedores', require('../routes/proveedores.routes'));
-        //this.app.use('/api/categorias', require('../routes/categorias.routes'));
+        this.app.use('/api/categorias', require('../routes/categoria.routes'));
         //this.app.use('/api/login', require('../routes/auth.routes'));
     }
 
