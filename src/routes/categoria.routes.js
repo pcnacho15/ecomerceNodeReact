@@ -1,17 +1,22 @@
 const { Router } = require('express');
 const { check } = require('express-validator');
-const { verCategorias } = require('../controller/categoria.controller');
+const { 
+    verCategorias, 
+    agregarCategoria, 
+    verCategoria,
+    actualizarCategoria,
+    eliminarCategoria} = require('../controller/categoria.controller');
 
 const router = Router();
 
 router.get('/', verCategorias);
 
-//router.get('/:id')
+router.get('/:id', verCategoria);
 
-//router.post('/');
+router.post('/', agregarCategoria);
 
-//router.put('/:id')
+router.put('/:id', actualizarCategoria);
 
-//router.delete('/:id');
+router.delete('/:id', eliminarCategoria);
 
 module.exports = router;
