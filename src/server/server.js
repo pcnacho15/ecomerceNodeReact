@@ -40,7 +40,7 @@ class Server {
         //this.app.use('/api/clientes', require('../routes/clientes.routes'));
         //this.app.use('/api/ventas', require('../routes/ventas.routes'));
         //this.app.use('/api/ventas-productos-detalles', require('../routes/ventaProductoDetalles.routes'));
-        //this.app.use('/api/productos', require('../routes/productos.routes'));
+        this.app.use('/api/productos', require('../routes/producto.routes'));
         //this.app.use('/api/producto-proveedores', require('../routes/productoProveedores.routes'));
         //this.app.use('/api/proveedores', require('../routes/proveedores.routes'));
         this.app.use('/api/categorias', require('../routes/categoria.routes'));
