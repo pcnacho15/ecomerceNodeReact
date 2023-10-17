@@ -38,7 +38,7 @@ const Usuario = db.define("Usuario", {
     defaultValue: false
     
   },
-  tipo_documento:{
+  tipo_usuario:{
     type: DataTypes.INTEGER,
     allowNull: false
   }
