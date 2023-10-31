@@ -5,8 +5,8 @@ también para realizar las relaciones de las mismas.
 
 const Categoria = require("./categoria");
 const Producto = require("./producto");
-const Usuario = requiere("./usuario");
-const TipoUsuario = requiere("./TipoUsuario");
+const Usuario = require("./usuario");
+const TipoUsuario = require("./TipoUsuario");
 
 // Relación de uno a muchos (Categoria - Producto)
 // Una categoría pues estar en varios productos
